@@ -1,0 +1,34 @@
+{
+  "name": "malusev/sodium-hashking-provider",
+  "description": "Libsodium password hashing provider for Laravel",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dusan Malusev",
+      "email": "dusan.998@outlook.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {},
+  "require-dev": {
+    "orchestra/testbench": "^5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SodiumHashing\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SodiumHashing\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SodiumHashing\\SodiumHashingProvider"
+      ]
+    }
+  }
+}
